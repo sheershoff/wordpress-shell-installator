@@ -1,0 +1,39 @@
+{
+    "name": "sheershoff/wordpress-shell-installator",
+    "description": "Wordpress console installer with chosen themes and/or plugins",
+    "keywords": ["wordpress", "installer"],
+    "homepage": "https://github.com/sheershoff/wordpress-shell-installator",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ilya Sheershoff",
+            "email": "sheershoff@gmail.com"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/sheershoff/wordpress-shell-installator/issues",
+        "wiki": "https://github.com/sheershoff/wordpress-shell-installator/wiki",
+        "source": "https://github.com/sheershoff/wordpress-shell-installator"
+    },
+    "minimum-stability": "stable",
+    "require": {
+        "php": ">=5.4.0",
+        "amercier/cli-helpers": "1.*"
+    },
+    "require-dev": {
+        "clue/phar-composer": "0.5.*"
+    },
+    "config": {
+        "process-timeout": 1800
+    },
+    "autoload": {
+        "psr-0": {"Sheershoff": "src/"}
+    },
+    "bin": ["bin/wordpress-shell-installator"],
+    "extra": {
+        "phar": {
+            "bundler": "composer"
+        }
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"http://wpackagist.org"
+        }
+    ],
+    "require": {
+        "wpackagist-plugin/akismet":"dev-trunk",
+        "wpackagist-plugin/captcha":">=3.9",
+        "wpackagist-theme/modality":"~1.0.4"
+    }
+}
